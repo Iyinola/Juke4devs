@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title> Welcome Admin</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.css">
+        <link href="css/styles.css" rel="stylesheet"/>
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+
+        <style type="text/css" media="screen">
+
+        .font{
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        .primary{
+            color: #00dd00;
+        }
+
+        #primary{
+            background-color: #212529;
+        }  
+
+        .secondary{
+            color: white;
+        }  
+        
+        .mainbutton{
+            border: 1px solid #00dd00;
+            background-color: #00dd00;
+            color: #000000;
+        }
+
+        .outlinebutton{
+            color: #00dd00;
+            background-color: #212529;
+            border-color: #00dd00;
+
+        }
+
+        .dark{
+            background-color: #212529;
+        }
+
+        li{
+            margin-right: 20px;
+        }
+
+        .user{
+            height: 200px;
+        }
+
+        .user p{
+            font-size: 13px;
+        }
+
+        a{
+            color:white;
+            text-decoration: none;
+        }
+
+       a:hover{
+        color:#00dd00; 
+    }
+
+    .profile{
+            border:1px solid #00dd00;
+            border-radius: 20px 20px;
+            box-sizing: border-box;
+            height: 130px;
+            color:white;
+            background-color: #212529;
+        }
+
+        </style>
+    </head>
+    <body id="primary" class="font">
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end bg-dark" id="sidebar-wrapper">
+                <div class="sidebar-heading border-bottom bg-dark primary"><img src="images/default2.png" alt="Juke4Devs" width="120" ></div>
+                <div class="list-group list-group-flush">
+                    <a class="bg-dark primary list-group-item list-group-item-action list-group-item-light p-3" href="adminpage.html"><span class="fa fa-home"></span> Dashboard</a>
+                    <a class="bg-dark primary list-group-item list-group-item-action list-group-item-light p-3" href="registered_users.html"><span class="fa fa-pen"></span> Registered Users</a>
+                    <a class="bg-dark primary list-group-item list-group-item-action list-group-item-light p-3 active" href="user_profile.html"><span class="fa fa-compass"></span> User Profile</a>
+                   
+                    <div class="card mt-4">
+                        <div class="card-body dark secondary rounded-bottom rounded-top pb-0">
+                            <p><b class="primary">Juke4Devs</b>.<br><b>Best collaborating app in Nigeria!</b></p> 
+                        </div>
+                    </div>      
+                </div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-dark border-bottom">
+                    <div class="container-fluid">
+                        <a href="" type="button" class="fa fa-bars primary" id="sidebarToggle"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mt-2 mt-lg-0 mr-5 " style="margin-left: 870px">
+                                <li class="nav-item active">
+                                   <li class="nav-item dropdown ml-4">
+                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/userpic.png" width="60" alt="username"></a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a href="#" class="dropdown-item"><img src="images/userpic.png" width="40" alt="username"></span> Dashboard</a>
+                                <a href="#" class="dropdown-item"> <span class="fas fa-cogs ml-2" style="color: grey"></span> Settings</a>
+                                <a href="#" class="dropdown-item"> <span class="fas fa-hands-helping ml-2" style="color: grey"></span>Help & Support</a>
+                                <a href="#" class="dropdown-item"> <span class="fas fa-sign-out-alt ml-2" style="color: grey"></span>Logout</a>
+                            </div>
+                            </li>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Page content-->
+                <div class="container-fluid">
+                    <div class="row">
+                            <div class="col mt-2 text-center">
+                                <img src="images/userpic.png" width="200">
+                                <p class="primary"><!-- <span class="secondary">Username:</span>  -->Iyinx</p>
+                            </div>
+                            <div class="col mt-4">       
+                                 <p class="primary my-2"><span class="secondary">Firstname:</span> Iyinola</e>
+                                 <p class="primary my-2"><span class="secondary">Lastname:</span> Kesinro</p>
+                                 <p class="primary my-2"><span class="secondary">Gender:</span> Female</p>
+                                 <p class="primary my-2"><span class="secondary">Location:</span> Lagos</p>
+                                 <p class="primary my-2"><span class="secondary">Address:</span> 2, Oluwole Street. Ikeja. Lagos</p>
+                            </div>   
+                    </div>
+                    
+                    <div class="row mt-4 m-5 p-4">
+                        <div class="col-md-12 table-responsive">
+                            <table class="table table-bordered ">
+                               <tr class="primary">
+                                   <th> S/N</th>
+                                   <th> Posts</th>
+                                   <th> Comments</th>
+                                   <th> Flag </th>
+                                   <th> Action </th>
+                               </tr>
+                               <tr class="secondary">
+                                 <td>1 </td> 
+                                 <td> I need help with my laravel group project</td>
+                                 <td>You can log it on slack</td>
+                                 <td> 5</td>
+                                 <td><a href="" class="btn outlinebutton"><b> Delete</b></a></td> 
+                               </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script type="text/javascript" src="bootstrap/js/jquery-3.6.0.js"></script>
+        <script type="text/javascript" src="bootstrap/js/popper.min.js"></script>
+        <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

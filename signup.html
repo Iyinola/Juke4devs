@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title> Sign Up Form</title>
+	<link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.css">
+    <link href="css/styles.css" rel="stylesheet"/>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+    
+    <style type="text/css" media="screen">
+
+    	.font{
+    		font-family: 'Roboto Mono', monospace;
+    	}
+
+    	 .primary{
+            color: #00dd00;
+        }
+
+        #primary{
+            background-color: #212529;
+        }    
+        
+        .mainbutton{
+            border: 1px solid #00dd00;
+            background-color: #00dd00;
+            color: #000000;
+        }
+
+        .outlinebutton{
+            color: #00dd00;
+            background-color: #212529;
+            border-color: #00dd00;
+
+        }
+
+        .dark{
+            background-color: #212529;
+
+        }
+
+        li{
+            margin-right: 20px;
+        }
+
+    </style>
+</head>
+<body class="dark font">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="row">
+				<div class="col">
+					<a href="index.html"><img src="images/default.png" width="80" alt="logo"></a>
+				</div>
+				<div class="col justify-content-end">
+					<a href="user_login.html" class="primary">Login</a> <!-- i've been looking for a way to make this login allign to the right -->
+				</div>
+			</div>
+		</div>
+			 <main class="py-1"> 
+			 	<div class="container"> 
+			 		<div class="row justify-content-center"> <div class="col-md-8"> <div class="card primary dark" style="border: 1px solid white"> <div class="card-header" style="border: 1px solid white; height: 40px"> <h5 class="text-center">Create an Account</h5>
+			  		</div>
+			                <div class="card-body">
+			                    <form method="POST" action="">
+			                        <input type="hidden" name="_token" value="">
+			                        <div class="form-group row">
+			                            <label for="fname" class="col-md-4 col-form-label text-md-right">Firstname</label>
+			                            <div class="col-md-6">
+			                                <input id="fname" type="text" class="form-control" name="fname">
+			                            </div>
+			                        </div>
+			                        <div class="form-group row my-2">
+			                            <label for="lname" class="col-md-4 col-form-label text-md-right">Lastname</label>
+			                            <div class="col-md-6">
+			                                <input id="lname" type="text" class="form-control" name="lname">
+
+			                            </div>
+			                        </div>
+			                         <div class="form-group row my-2">
+			                            <label for="phone" class="col-md-4 col-form-label text-md-right">Phone Number</label>
+			                            <div class="col-md-6">
+			                                <input id="phone" type="text" class="form-control" name="phone">
+			                            </div>
+			                        </div>
+			                         <div class="form-group row my-2">
+			                            <label for="email" class="col-md-4 col-form-label text-md-right">E-mail</label>
+			                            <div class="col-md-6">
+			                                <input id="email" type="email" class="form-control" name="email">
+			                            </div>
+			                        </div>
+			                        <div class="form-group row mt-2">
+			                        	<label for="gender" class="col-md-4 col-form-label text-md-right">Gender</label>
+			                        	<div class="col-md-6">
+			                        		<div class="row">
+			                        			<div class="col">
+			                        				<input type="radio" name="gender" value="female" id="female"> <label for="female">Female</label>
+			                        			</div>
+			                        			<div class="col">
+			                        				<input type="radio" name="gender" value="male" id="male"><label for="male" class="ml-4">Male</label>
+			                        			</div>
+			                        		</div>	
+			                        	</div>
+			                        </div>
+			                         <div class="form-group row mb-2 mt-0">
+			                            <label for="dob" class="col-md-4 col-form-label text-md-right">Date of Birth</label>
+			                            <div class="col-md-6">
+			                                <input id="dob" type="date" class="form-control" name="dob">
+			                            </div>
+			                        </div>
+			                        
+			                        <div class="form-group row my-2">
+			                            <label for="state" class="col-md-4 col-form-label text-md-right">State</label>
+			                            <div class="col-md-6">
+			                                <input id="state" type="text" class="form-control" name="state">
+			                            </div>
+			                        </div>
+			                        <div class="form-group row my-2">
+			                            <label for="address" class="col-md-4 col-form-label text-md-right">Address</label>
+			                            <div class="col-md-6">
+			                            	<textarea name="address" class="form-control"> Enter your Address</textarea>
+				                            </div>
+			                        </div>
+			                        <div class="form-group row my-2">
+			                            <label for="username" class="col-md-4 col-form-label text-md-right">Username</label>
+			                            <div class="col-md-6">
+			                                <input id="username" type="text" class="form-control" name="username">
+			                            </div>
+			                        </div>
+			                         <div class="form-group row my-2">
+			                            <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
+			                            <div class="col-md-6">
+			                                <input id="password" type="password" class="form-control" name="password">
+			                            </div>
+			                        </div>
+			                         <div class="form-group row my-2">
+			                            <label for="password2" class="col-md-4 col-form-label text-md-right">Confirm Password</label>
+			                            <div class="col-md-6">
+			                                <input id="password2" type="password" class="form-control" name="password2">
+			                            </div>
+			                        </div>
+			                        <div class="form-group row mb-0 mt-2">
+			                            <div class="col-md-6 offset-md-4 text-center">
+			                                <button type="submit" class="btn mainbutton"><b>Sign Up</b></button>
+			                            </div>
+			                        </div>
+			                    </form>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</div>
+        </main>
+	</div>
+</div>
+
+
+
+</body>
+</html>
